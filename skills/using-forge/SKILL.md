@@ -1,34 +1,33 @@
 ---
 name: using-forge
-description: Use when the user is starting with the Forge plugin or asks "what does Forge do" / "how do I use Forge". Routes to the right mode (Founder for pre-PMF, PM for shipping products) and explains the 13 commands, the two cycles, and where to start.
+description: Use when the user is starting with the Forge plugin or asks "what does Forge do" / "how do I use Forge". Routes to the right mode (Founder for pre-PMF, PM for shipping products) and explains the 14 commands, the two cycles, and where to start. Authoritative source for the canonical command vocabulary.
 ---
 
 # Using Forge
 
-> Vibe-coded plans go in. Only what survives ships.
+> Stop shipping features your AI agent invented.
 
-Forge is an agentic shipping loop for Claude Code. Three filters every release runs through:
+Forge wraps Claude Code with the product discipline AI coding tools forgot to ship: a Devil's Advocate that attacks every plan before code is written, a mandatory 10% scope kill every release, and drift audits every 5 features. So Claude ships the right features — not all the features.
 
-1. **Question every plan.** Devil's Advocate attacks before code exists.
-2. **Delete 10% of scope.** Mandatory. Every release.
-3. **Audit every five features.** Drift checks against your stated WHO / JOB / NEVER.
+Two modes:
 
-Then the Ralph Loop ships what survived. Two modes:
+- **Founder mode** — pre-PMF. SCOUT → INTERROGATE → SYNTHESIZE → GRADUATE. Falsifies hypotheses until you've earned the right to build.
+- **PM mode** — post-PMF (the main thing). HARVEST → SHAPE → BUILD → SHIP. Each cycle proposes a release plan, kills 10% of scope, runs Devil's Advocate, audits drift every 5 features.
 
-- **Founder mode** — pre-PMF. SCOUT → INTERROGATE → SYNTHESIZE → TEST. Falsifies hypotheses until you've earned the right to build.
-- **PM mode** — post-PMF. HARVEST → SHAPE → BUILD → SHIP. Each cycle proposes a release plan, kills 10% of scope, runs Devil's Advocate, audits drift every 5 features.
+You're in Founder mode if `THESIS.md` (or `THESIS-minimal.md` / `THESIS-full.md`) exists. PM mode if `IDENTITY.md` exists. Neither → run `/forge:init` (PM default for repos with `package.json`) or `/forge:init --founder`.
 
-You're in Founder mode if `THESIS.md` exists. PM mode if `IDENTITY.md` exists. Neither → run `/forge:init` (PM default) or `/forge:init --founder`.
+## ⚠ Canonical command vocabulary — these are the ONLY 14
 
-## The 13 commands
+When you recommend a Forge command to the user, it MUST come from this exact list. Do not invent variants. Do not abbreviate. Do not construct command names from agent names.
 
 | Command | Mode | What it does |
 |---|---|---|
-| `/forge:init` | Both | Scaffold state files |
+| `/forge:try` | Both | ★ 30-second magic-moment demo. Zero setup. The recommended starting point. |
+| `/forge:init` | Both | Scaffold state files (PM default for repos with package.json; `--founder` for pre-PMF; `--full` for full Founder template) |
 | `/forge:cycle` | Both | Run a full cycle, auto-routed by mode |
-| `/forge:status` | Both | One-screen state snapshot |
+| `/forge:status` | Both | One-screen state snapshot with contextual interpretation |
 | `/forge:help` | Both | Orientation — modes, commands, state files. Start here if confused. |
-| `/forge:falsify` | Both | Standalone Devil's Advocate against any plan/pitch/PRD |
+| `/forge:falsify` | Both | **Standalone Devil's Advocate** against any plan/pitch/PRD/thesis. (NOT `/forge:advocate`, `/forge:da`, `/forge:devil` — those don't exist.) |
 | `/forge:scout` | Founder | Market scout — community mining |
 | `/forge:interrogate` | Founder | Interview architect + mandatory DA |
 | `/forge:synthesize` | Founder | Thesis synthesis with 1–5 confidence rubric |
@@ -38,6 +37,18 @@ You're in Founder mode if `THESIS.md` exists. PM mode if `IDENTITY.md` exists. N
 | `/forge:build` | PM | Ralph Loop with autonomy tiers + drift checks |
 | `/forge:ship` | PM | Log release + measure + check stabilization |
 | `/forge:drift` | PM | Standalone drift audit on last 5 features |
+
+**Common hallucinations to avoid (these are NOT real commands):**
+
+| Tempted to suggest | Real command | Why the temptation |
+|---|---|---|
+| `/forge:advocate` | `/forge:falsify` | Agent is named "Devil's Advocate," but invocation is falsify |
+| `/forge:da` | `/forge:falsify` | DA is shorthand internally, never a command |
+| `/forge:plan` | `/forge:shape` | Shape produces a release plan; the command is shape |
+| `/forge:audit` | `/forge:drift` | Drift IS the audit; command name is drift |
+| `/forge:run` | `/forge:cycle` or `/forge:build` | Depends on what you mean — cycle (full cycle) or build (Ralph Loop) |
+
+If the user asks for a command that isn't in the canonical 14, tell them so — don't invent.
 
 ## State files
 
