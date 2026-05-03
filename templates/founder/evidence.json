@@ -1,0 +1,47 @@
+{
+  "version": "2.0",
+  "evidence": [
+    {
+      "id": "E-001",
+      "source": "interview",
+      "type": "behavioral",
+      "quote": "[Verbatim quote or data point — e.g., 'I spend every Monday morning for 3 hours copying data between Splunk and our ticketing system']",
+      "hypothesis_ids": ["H-001"],
+      "direction": "supports",
+      "weight": 3,
+      "date": "YYYY-MM-DD",
+      "reference": "Interview 1 — [Role] at [Company type]",
+      "forge": 1,
+      "model_source": "sonnet",
+      "notes": null
+    },
+    {
+      "id": "E-002",
+      "source": "community",
+      "type": "qualitative",
+      "quote": "[Verbatim quote — e.g., 'Honestly our current process works fine, we just deal with it']",
+      "hypothesis_ids": ["H-001"],
+      "direction": "contradicts",
+      "weight": 1,
+      "date": "YYYY-MM-DD",
+      "reference": "Reddit r/[subreddit] — [URL]",
+      "forge": 1,
+      "model_source": "haiku",
+      "notes": "Contradictory signal — suggests not everyone experiences the pain"
+    }
+  ],
+  "schema": {
+    "id": "E-NNN (sequential)",
+    "source": "interview | community | competitor | data | expert",
+    "type": "behavioral | stated_intent | quantitative | qualitative",
+    "quote": "Verbatim quote or specific data point",
+    "hypothesis_ids": ["H-NNN — which hypotheses this evidence relates to"],
+    "direction": "supports | contradicts | neutral",
+    "weight": "1 (weak/stated intent) | 2 (moderate/mixed) | 3 (strong/behavioral)",
+    "date": "YYYY-MM-DD when the evidence was collected",
+    "reference": "Source link, interview reference, or document citation",
+    "forge": "Forge number when evidence was collected",
+    "model_source": "Which model generated this evidence tag (opus | sonnet | haiku | human). For audit trail.",
+    "notes": "Optional context or interpretation"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "version": "2.0",
+  "hypotheses": [
+    {
+      "id": "H-001",
+      "statement": "[Falsifiable claim — e.g., 'Security operations managers at mid-market companies spend >4 hours/week manually correlating alerts across multiple tools']",
+      "category": "problem",
+      "priority": "P1",
+      "status": "active",
+      "confidence": 1,
+      "test": "[Specific test — e.g., 'Ask 10 SOC managers to walk through their last alert triage. Count how many mention manual correlation and time spent.']",
+      "falsification_criteria": "[REQUIRED — What would disprove this — e.g., 'Fewer than 3 of 10 describe manual correlation, or average time <1 hour/week']",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "created_cycle": 1,
+      "last_updated_cycle": 1,
+      "notes": null
+    },
+    {
+      "id": "H-002",
+      "statement": "[Second hypothesis — e.g., 'Mid-market security teams would pay $25K-50K/year for automated alert correlation']",
+      "category": "pricing",
+      "priority": "P2",
+      "status": "active",
+      "confidence": 1,
+      "test": "[Specific test — e.g., 'Run Van Westendorp in 5+ interviews. Check if optimal price falls within range.']",
+      "falsification_criteria": "[REQUIRED — What would disprove this — e.g., 'Van Westendorp optimal price <$15K or >$75K, or buyers say budget caps at $20K']",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "created_cycle": 1,
+      "last_updated_cycle": 1,
+      "notes": null
+    }
+  ],
+  "schema": {
+    "id": "H-NNN (sequential)",
+    "statement": "Falsifiable claim — specific, measurable, testable",
+    "category": "purpose | problem | market | wedge | competition | defensibility | pricing | buying_process",
+    "priority": "P1 (existential — must be true) | P2 (important) | P3 (nice to validate)",
+    "status": "active | confirmed | weakened | invalidated | graduated",
+    "confidence": "1-5 (see SYSTEM.md confidence rubric)",
+    "test": "The specific action that would confirm or falsify this",
+    "falsification_criteria": "REQUIRED — What result would disprove this hypothesis. Not optional in v2.",
+    "supporting_evidence": ["E-NNN references from evidence.json"],
+    "contradicting_evidence": ["E-NNN references from evidence.json"],
+    "created_cycle": "Forge number when hypothesis was created",
+    "last_updated_cycle": "Forge number of last status/confidence change",
+    "notes": "Optional context or reasoning"
+  }
+}

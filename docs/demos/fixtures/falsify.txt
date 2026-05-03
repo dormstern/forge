@@ -1,0 +1,27 @@
+═════════════════════════════════════════════════════
+  DEVIL'S ADVOCATE — Kill Report
+  Target: "acqui-hire pitch to BigCo Security Group"
+  Attacks: 9   Killed: 3   Wounded: 4   Survived: 2
+═════════════════════════════════════════════════════
+
+✗ KILL — Cope Moat
+  "Two-phase action reservation" is a feature, not a moat.
+  A funded incumbent ships these in 6–8 weeks.
+  Cheap test (≤48h): list 3 SaaS surfaces you cover that BigCo doesn't.
+
+✗ KILL — False Champion
+  Name the specific exec who would champion this internally.
+  If you can't, this is cold outreach with hope dressed as conviction.
+  Cheap test: forward to your warmest contact and ask "who?"
+
+✗ KILL — Timeline Cope
+  "Plug into IAM" is 6 months of integration, not a kit-bash.
+  Cheap test: ask any BigCo PM what their last small partner integration took.
+
+⚠ WOUND — TAM Mirage, Weak Wedge, Replicability, Distribution
+✓ SURVIVE — Cherry-Picking, CISO Tenure Risk
+
+═════════════════════════════════════════════════════
+  Bottom line: REWRITE before sending.
+  Run the 3 cheap tests in the next 48 hours.
+═════════════════════════════════════════════════════

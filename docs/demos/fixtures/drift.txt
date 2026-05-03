@@ -1,0 +1,20 @@
+## Drift Report — 2026-04-15
+
+| Feature                    | WHO | JOB | NEVER | Arch | Contracts | Rework | Q  |
+|----------------------------|-----|-----|-------|------|-----------|--------|----|
+| otel-log-correlation       | ✓   | ✓   | ✓     | ✓    | ✓         | ✗      | 9  |
+| unified-query-syntax       | ✓   | ✓   | ✓     | ✓    | ✓         | ✗      | 8  |
+| trace-onboarding-wizard    | ✓   | ✓   | ✓     | ✓    | ✓         | ✗      | 7  |
+| honeycomb-comparison       | ✗   | ✓   | ✓     | ✓    | ✓         | ✗      | 8  |
+| engine-interface-debt      | ✓   | ✓   | ✓     | ✓    | ✓         | ✗      | 9  |
+
+Stabilization indicators:
+  avg quality 8.2  → OK
+  REWORK flags: 0  → OK
+  avg resets: 0.4  → OK
+
+Recommendation: DISCUSS
+
+Rationale: honeycomb-comparison doesn't serve WHO directly.
+It's a sales asset, not a product feature. Worth doing — but log
+it as type: "infrastructure" not type: "feature" next time.

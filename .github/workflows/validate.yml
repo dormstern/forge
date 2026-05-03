@@ -1,0 +1,22 @@
+# Forge plugin validator workflow.
+# Security: this workflow uses NO untrusted input (no github.event.* references,
+# no PR title/body/comment interpolation). Only runs a static shell script on
+# push and pull_request events. Safe by construction.
+
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make validator executable
+        run: chmod +x scripts/validate-plugin.sh
+      - name: Run plugin validator
+        run: scripts/validate-plugin.sh

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "forge",
+  "description": "Vibe-coded plans go in. Only what survives ships. An agentic shipping loop for Claude Code, built on the Ralph Loop.",
+  "owner": {
+    "name": "Dor Morgenstern",
+    "url": "https://github.com/dormstern"
+  },
+  "plugins": [
+    {
+      "name": "forge",
+      "description": "Drift-protected agentic shipping. Devil's Advocate before every plan, mandatory 10% Delete Rule, drift checks every five features. Two modes: Founder validation (SCOUT → INTERROGATE → SYNTHESIZE → GRADUATE) and PM shipping (HARVEST → SHAPE → BUILD → SHIP). 13 commands, 9 agents, 10 skills, 13 state-file templates.",
+      "category": "development",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/dormstern/forge.git"
+      },
+      "homepage": "https://github.com/dormstern/forge"
+    }
+  ]
+}

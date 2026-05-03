@@ -1,0 +1,54 @@
+{
+  "product": "ProductName",
+  "schema_version": "2.0.0",
+  "contract_mode": "none",
+  "releases": [
+    {
+      "version": "1.0.0",
+      "name": "Genesis",
+      "thesis": "Initial product launch delivering [core capability] for [WHO]",
+      "identity_version": "1.0",
+      "status": "shipped",
+      "started": "YYYY-MM-DD",
+      "shipped": "YYYY-MM-DD",
+      "features_planned": 0,
+      "features_shipped": 0,
+      "features_blocked": 0,
+      "debt_items_planned": 0,
+      "debt_items_shipped": 0,
+      "features_killed": 0,
+      "rework_count": 0,
+      "rework_rate": 0,
+      "total_resets": 0,
+      "avg_quality_score": null,
+      "identity_changes": [],
+      "breaking_changes": [],
+      "key_learnings": [],
+      "open_questions": [],
+      "signals": []
+    }
+  ],
+  "current_cycle": {
+    "phase": "HARVEST",
+    "version": "1.1.0",
+    "thesis": "",
+    "started": "YYYY-MM-DD",
+    "shaped_features": [],
+    "shaped_debt": [],
+    "kill_list": [],
+    "appetite_exclusions": [],
+    "signals": [
+      {
+        "_comment": "SIGNAL SCHEMA -- delete this example entry",
+        "id": "SIG-001",
+        "category": "user_pain | feature_request | usage_pattern | production_health | tech_debt | competitive | rework",
+        "title": "Short descriptive title",
+        "source": "Where this signal came from (tickets, analytics, observation)",
+        "impact": "Who is affected and how badly",
+        "strength": "HIGH | MEDIUM | LOW",
+        "thesis_impact": "null | confirms | challenges | invalidates",
+        "requested_by": "Person name who surfaced this signal"
+      }
+    ]
+  }
+}
