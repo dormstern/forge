@@ -1,0 +1,82 @@
+{
+  "version": "2.0",
+  "current_cycle": {
+    "number": 1,
+    "phase": "SCOUT",
+    "started": "YYYY-MM-DD",
+    "status": "in_progress"
+  },
+  "cycles": [
+    {
+      "number": 0,
+      "label": "Genesis",
+      "started": "YYYY-MM-DD",
+      "completed": "YYYY-MM-DD",
+      "phases": {
+        "scout": {
+          "completed": true,
+          "model_used": "sonnet",
+          "notes": "Initial landscape scan"
+        },
+        "interrogate": {
+          "completed": false,
+          "model_used": null,
+          "notes": "Skipped in genesis — no interviews yet (genesis is the only cycle where phase skipping is allowed)"
+        },
+        "synthesize": {
+          "completed": true,
+          "model_used": "opus",
+          "notes": "Initial thesis drafted"
+        },
+        "test": {
+          "completed": true,
+          "model_used": "sonnet",
+          "notes": "Baseline established"
+        }
+      },
+      "confidence_snapshot": {
+        "purpose": 1,
+        "problem": 1,
+        "market": 1,
+        "wedge": 1,
+        "competition": 1,
+        "defensibility": 1,
+        "pricing": 1
+      },
+      "confidence_delta": {
+        "purpose": 0,
+        "problem": 0,
+        "market": 0,
+        "wedge": 0,
+        "competition": 0,
+        "defensibility": 0,
+        "pricing": 0
+      },
+      "hypothesis_changes": [],
+      "devils_advocate_summary": "Not yet run — genesis cycle",
+      "interviews_conducted": 0,
+      "commitments_obtained": 0,
+      "decision": "CONTINUE",
+      "decision_rationale": "Genesis cycle complete. Thesis drafted from founder assumptions. All sections at baseline confidence. Begin validation.",
+      "next_cycle_focus": "Broad landscape scan + first 3-5 interviews to test core problem hypothesis"
+    }
+  ],
+  "graduation_status": {
+    "criteria_met": 0,
+    "criteria_total": 12,
+    "missing": [
+      "Problem confidence >= 4",
+      "Pricing confidence >= 4",
+      "Purpose confidence >= 3",
+      "Market confidence >= 3",
+      "Wedge confidence >= 3",
+      "Competition confidence >= 3",
+      "Defensibility confidence >= 3",
+      "No invalidated P1 hypotheses",
+      "Devil's Advocate: no existential risks (including moat stress test)",
+      ">= 12 interviews across >= 3 segments (no segment > 40%)",
+      ">= 3 real commitments",
+      "Confidence stable/increasing over 2 cycles"
+    ]
+  }
+}

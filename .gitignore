@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.env.local
+.idea/
+.vscode/
+dist/
+coverage/
+*.pyc
+__pycache__/
+
+# Internal launch strategy — never commit
+docs/launch/
+docs/thread-template.md
+forge-launch-internal/

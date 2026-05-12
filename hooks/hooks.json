@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f \"$CLAUDE_PROJECT_DIR/IDENTITY.md\" ]; then echo 'Forge is loaded — PM mode active. Run /forge:status to see your release plan, or /forge:harvest to start the next cycle.'; elif [ -f \"$CLAUDE_PROJECT_DIR/THESIS.md\" ] || [ -f \"$CLAUDE_PROJECT_DIR/THESIS-minimal.md\" ] || [ -f \"$CLAUDE_PROJECT_DIR/THESIS-full.md\" ]; then echo 'Forge is loaded — Founder mode active. Run /forge:status for hypothesis trajectory, or /forge:interrogate to keep validating.'; else echo 'Forge is loaded. Run /forge:try to see the Devil'\\''s Advocate in action, or /forge:init when you'\\''re ready to set up your project.'; fi"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+═════════════════════════════════════════════════════
+  FORGE — Release Plan v0.5
+  Thesis: "Make multi-source incident investigation actually one-tool."
+═════════════════════════════════════════════════════
+
+  FEATURES (5)                            AUTONOMY    SIGNAL
+  ───────────────────────────────────────────────────────
+  ✓ otel-log-correlation-in-query          T2          SIG-032
+  ✓ unified-trace-metric-log-syntax        T2          SIG-031
+  ⚠ trace-onboarding-wizard                T3          SIG-034
+  ✓ engine-interface-consistency-debt      T1          SIG-035
+
+  KILL LIST (10% Delete Rule fired ✗)
+  ───────────────────────────────────────────────────────
+  ✗ legacy-prom-remote-write-shim          stale, no signal in 6 mo
+  ✗ web-ui-dashboard-builder               low usage, evaluate=fail
+  ✗ slack-bot-integration                  one customer, no growth
+
+  DEVIL'S ADVOCATE
+  ───────────────────────────────────────────────────────
+  ⚠ Cope Moat: "OpenTelemetry-native" — Honeycomb is too. Differentiate?
+  ⚠ Timeline Cope: trace-wizard is 2 weeks of work disguised as 1
+  ✓ Cherry-Picking: clean — SIG-034 (challenging) included
+
+  Run /forge:build to start. /forge:falsify to attack the plan harder.
+═════════════════════════════════════════════════════

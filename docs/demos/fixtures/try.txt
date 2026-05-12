@@ -1,0 +1,79 @@
+═════════════════════════════════════════════════════
+  ⚡ DEVIL'S ADVOCATE — Kill Report
+  Target: "ReceiptScan AI — a SaaS that turns
+          your phone photos of receipts into
+          structured expense data via GPT-4 Vision"
+  Attacks: 8     Killed: 3     Wounded: 4     Survived: 1
+  Falsifiability Index: 8/8 attacks meaningful — high confidence
+═════════════════════════════════════════════════════
+
+✗ KILL — Cope Moat                                  conf: 92
+  "GPT-4 Vision does the OCR" is not a moat. Every
+  competitor has the same access. You're a UI on top of
+  somebody else's API. Six weeks until someone wraps the
+  same call in a $9/mo app and undercuts you.
+  Cheap test (≤48h): name 3 categories of receipts your
+  product handles that Expensify+Vision wrappers cannot.
+
+✗ KILL — False Champion                              conf: 87
+  "Small business owners want this" is a bystander, not a
+  buyer. Name the specific person — title + company size +
+  what they're using today + what would have to be true for
+  them to switch. If you can't, you have hope, not a champion.
+  Cheap test: text 3 actual SMB owners and ask "what do you
+  use for receipts today, and why?"
+
+✗ KILL — TAM Mirage                                  conf: 84
+  "$50B expense management market" is the headline number,
+  not your TAM. Your TAM is "SMBs who hate Expensify enough
+  to switch + would pay $20-50/mo + can be reached via
+  channels you can afford." That's probably <$200M, before
+  the GPT-4 wrappers split it.
+
+⚠ WOUND — Timeline Cope                              conf: 76
+  Your roadmap quotes "MVP in 4 weeks." Receipt OCR is the
+  easy part — the hard part is multi-tenant accounts, OAuth
+  with QuickBooks/Xero, audit trails for tax season, refund/
+  expense reconciliation. Realistic: 12 weeks to anything
+  defensible. Adjust expectations or pre-pick which 2 of
+  those 4 you're skipping.
+
+⚠ WOUND — Weak Wedge                                 conf: 71
+  "Better receipt OCR" is a feature wedge. Your wedge needs
+  to be a *workflow* wedge: which specific moment in the
+  expense-management workflow does ReceiptScan replace,
+  end-to-end, in a way Expensify can't catch up to in 6 months?
+
+⚠ WOUND — Replicability Risk                         conf: 68
+  Three competitors are 30 days behind you on the same idea
+  (Mindee, Veryfi, Nanonets all have receipt-OCR APIs you
+  could be wrapping). If your only moat is "we shipped
+  first," you'll be re-platformed within a year.
+
+⚠ WOUND — Distribution Gap                           conf: 64
+  How does an SMB owner find you? "SEO + content marketing"
+  is what every wrapper says. Real distribution requires
+  partnerships (QuickBooks app marketplace, Xero, FreshBooks)
+  or a hand-built channel (accountant networks). Pick one
+  and budget 6 months.
+
+✓ SURVIVE — Cherry-Picking                           conf: 89
+  Your plan included 2 contradicting signals (Mindee's
+  $3M/yr revenue ceiling on the same wedge, and the
+  Expensify pricing-floor problem). You're not lying to
+  yourself about the data. That's rare and worth keeping.
+
+═════════════════════════════════════════════════════
+  Bottom line: REWRITE before you build.
+
+  Run 3 cheap tests in the next 48 hours:
+    1. Text 3 SMB owners about their current workflow
+    2. List 3 receipt categories Vision wrappers can't handle
+    3. Pick ONE distribution partner to spike on first
+
+  Then re-run /forge:falsify on the rewritten plan.
+
+  This was a demo. Run /forge:falsify on YOUR plan to see
+  what survives — paste it as text, point at a file, or pipe
+  in any pitch / PRD / thesis.
+═════════════════════════════════════════════════════

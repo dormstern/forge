@@ -1,0 +1,21 @@
+{
+  "name": "forge",
+  "version": "0.1.0",
+  "description": "Devil's Advocate against any plan, plus a discipline harness for shipping products with Claude Code. Run /forge:try for a 30-second demo. Three filters every release: question, delete, audit. Built on the Ralph Loop.",
+  "author": {
+    "name": "Dor Morgenstern",
+    "url": "https://github.com/dormstern"
+  },
+  "repository": "https://github.com/dormstern/forge",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "product-management",
+    "agentic-shipping",
+    "founder-validation",
+    "drift-protection",
+    "release-cycle",
+    "state-files"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "forge",
+  "version": "0.1.0",
+  "description": "Devil's Advocate against any plan, plus a discipline harness for shipping products with Claude Code. Run /forge:try for the 30-second demo.",
+  "keywords": [
+    "claude-code",
+    "claude-code-plugin",
+    "product-management",
+    "agentic-coding",
+    "founder",
+    "drift",
+    "release-cycle"
+  ],
+  "homepage": "https://github.com/dormstern/forge",
+  "bugs": {
+    "url": "https://github.com/dormstern/forge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dormstern/forge.git"
+  },
+  "license": "MIT",
+  "author": "Dor Morgenstern <https://github.com/dormstern>",
+  "files": [
+    ".claude-plugin/",
+    "agents/",
+    "commands/",
+    "docs/",
+    "examples/",
+    "hooks/",
+    "scripts/",
+    "skills/",
+    "templates/",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=14"
+  }
+}
